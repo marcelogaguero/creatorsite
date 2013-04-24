@@ -4,6 +4,16 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://C:/Documents and Settings/Marcelo/Mis documentos/Mis Proyectos/test/composer.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://C:/Documents and Settings/Marcelo/Mis documentos/Mis Proyectos/test/composer.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

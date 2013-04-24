@@ -24,5 +24,12 @@ class Autoloader
             }
             closedir($handle);
         }
+
+        self::loadLibs();
     }
+
+    private static function loadLibs(){
+        require_once __DIR__.'/../libs/addendum/annotations.php';
+    }
+
 }
