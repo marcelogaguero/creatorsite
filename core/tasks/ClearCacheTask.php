@@ -29,7 +29,9 @@ class ClearCacheTask extends TaskBase
 
     public function execute($parameters, $options)
     {
-        Utils::deleteDirectory(__DIR__ ."/../../cache/compiled");
+        $dir = __DIR__ ."/../../cache/compiled";
+        Utils::deleteDirectory($dir);
+        if(!mkdir($dir, 0775, true)) throw new \Exception("No se pudo crear el directorio $dir. \n");
     }
 
 }

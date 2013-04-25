@@ -19,6 +19,5 @@ class Utils
             if (!self::deleteDirectory($dir.DIRECTORY_SEPARATOR.$item)) return false;
         }
         rmdir($dir);
-        if(!mkdir($dir.DIRECTORY_SEPARATOR."compiled", 0775, true)) throw new \Exception("No se pudo crear el directorio $dir/compiled. \n");
     }
 }

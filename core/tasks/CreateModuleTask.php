@@ -45,13 +45,12 @@ class CreateModuleTask extends TaskBase
         if (!file_put_contents($file, $code)) die("Error: no se pudo crear el archivo $file. \n");
 
         $html = $this->getCodeView();
-        $file = $path."/views/index.php";
+        $file = $path."/views/index.html.twig";
         if (!file_put_contents($file, $html)) die("Error: no se pudo crear el archivo $file. \n");
 
     }
 
     protected function getClassCode($module){
-
         $dir = strtolower($module);
         $date = date('d/m/Y m:s');
         $nameclass = $module."Controller";
@@ -71,7 +70,7 @@ class CreateModuleTask extends TaskBase
     class $nameclass extends BaseController
     {
         public function indexAction(){
-            return \$this->render(\$this->getPathBaseModule().'/views/index.php', array());
+            return \$this->render(\$this->getPathBaseModule().'/views/index.html.twig', array());
         }
     }
 EOD;
@@ -79,15 +78,18 @@ EOD;
     }
 
     protected function getCodeView(){
+
         $html = <<<EOD
-        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-        <head>
-        </head>
-        <body>
-            CONTENIDO
-        </body>
-        </html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" href="/web/css/bootstrap.min.css" />
+</head>
+<body>
+    <h1>CREADOR DE SITIOS</h1><br/>
+    <p>Nuevo modulo</p>
+</body>
+</html>
 EOD;
         return $html;
     }
