@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c6076e-73b9-4ce6-9de0-45803d75df1e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/compiled/9b/63/aed978d4e6c299d4cac99e787141.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
@@ -59,7 +60,7 @@
       <file leaf-file-name="BaseController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="635" selection-end="635" vertical-scroll-proportion="0.23809524">
+            <state line="44" column="40" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.5714286">
               <folding />
             </state>
           </provider>
@@ -200,20 +201,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="creatorsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -327,7 +314,15 @@
       <created>1366911403082</created>
       <updated>1366911403082</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tarea borrar cache">
+      <created>1366911445582</created>
+      <updated>1366911445582</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Tarea borrar cache">
+      <created>1366911483051</created>
+      <updated>1366911483051</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -452,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/mga/console/core/Console.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="64" selection-start="286" selection-end="318" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="16" selection-start="225" selection-end="225" vertical-scroll-proportion="-6.25">
@@ -520,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="635" selection-end="635" vertical-scroll-proportion="0.23809524">
+        <state line="44" column="40" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.5714286">
           <folding />
         </state>
       </provider>
