@@ -22,4 +22,8 @@ class Context
         $filename = 'config_'.$this->environment.'.ini';
         return Config::read($filename);
     }
+
+    public function getEnvironment(){
+        return $this->environment;
+    }
 }
