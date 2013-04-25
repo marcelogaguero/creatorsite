@@ -7,7 +7,11 @@
 namespace {
 
     $load = require "vendor/autoload.php";
-    // require "core/Console.php";
+    require_once "core/Application.php";
 
-    $console = new \core\Console($argv);
+    \core\Application::init();
+
+    $newPathDirClass = __DIR__ ."/core/tasks";
+    $namespace = "\\tasks\\";
+    $console = new \core\Console($argv, $newPathDirClass, $namespace);
 }

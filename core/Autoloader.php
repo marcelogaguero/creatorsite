@@ -28,8 +28,9 @@ class Autoloader
         self::loadLibs();
     }
 
-    private static function loadLibs(){
+    public static function loadLibs(){
         require_once __DIR__.'/../libs/addendum/annotations.php';
+        require_once __DIR__.'/../core/tools/Utils.php';
     }
 
 }
