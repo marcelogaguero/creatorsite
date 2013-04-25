@@ -44,10 +44,11 @@ class BaseController
 
     public function render($template, $params = array()){
 
+        /* @TODO no poner la cache en desarrollo */
         $parser = $this->parserTemplate($template);
-
         $loader = new \Twig_Loader_Filesystem($parser['path']);
         $twig = new \Twig_Environment($loader, array(
+            'debug' => true,
             'cache' => $this->cache,
         ));
 
