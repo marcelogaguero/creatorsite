@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="15c6076e-73b9-4ce6-9de0-45803d75df1e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/BaseController.php" afterPath="$PROJECT_DIR$/core/BaseController.php" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,25 +59,7 @@
       <file leaf-file-name="BaseController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="49" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.61904764">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/users/views/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="37" selection-start="222" selection-end="222" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usersController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/users/controllers/usersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="68" selection-start="405" selection-end="420" vertical-scroll-proportion="-5.625">
+            <state line="30" column="0" selection-start="635" selection-end="635" vertical-scroll-proportion="0.23809524">
               <folding />
             </state>
           </provider>
@@ -229,7 +210,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,7 +323,11 @@
       <created>1366911100968</created>
       <updated>1366911100968</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tarea borrar cache">
+      <created>1366911403082</created>
+      <updated>1366911403082</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -354,7 +339,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26542324" sideWeight="0.6704708" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26542324" sideWeight="0.6704708" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952926" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -490,20 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/users/controllers/usersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="68" selection-start="405" selection-end="420" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/users/views/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="222" selection-end="222" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/tools/Utils.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="20" selection-start="593" selection-end="593" vertical-scroll-proportion="-12.5">
@@ -549,7 +520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="49" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.61904764">
+        <state line="30" column="0" selection-start="635" selection-end="635" vertical-scroll-proportion="0.23809524">
           <folding />
         </state>
       </provider>
