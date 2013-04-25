@@ -12,5 +12,5 @@ require_once __DIR__.'/config/includes.php';
 use \config\Environment;
 
 $dispacher = new Environment('dev');
-$dispacher->begin();
+echo $dispacher->begin();
 

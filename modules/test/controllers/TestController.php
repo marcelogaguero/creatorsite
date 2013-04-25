@@ -16,6 +16,6 @@ class TestController extends BaseController
 
         $params = $_GET;
 
-        return $this->render($this->getPathBaseModule().'/views/index.php', $params);
+        return $this->render($this->getPathBaseModule().'views/index.html.twig', $params);
     }
 }
