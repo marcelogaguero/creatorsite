@@ -31,6 +31,10 @@ class Autoloader
     public static function loadLibs(){
         require_once __DIR__.'/../libs/addendum/annotations.php';
         require_once __DIR__.'/../core/tools/Utils.php';
+        require_once __DIR__.'/../core/db/Connection.php';
+        require_once __DIR__.'/../core/Context.php';
+        require_once __DIR__.'/../core/Migration.php';
+        require_once __DIR__.'/../core/Config.php';
     }
 
 }

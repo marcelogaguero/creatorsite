@@ -9,21 +9,46 @@
 namespace core;
 
 use \core\Config;
+use \core\db\Connection;
 
 class Context
 {
     private $environment;
+    private $config;
+    private $connection;
 
     function __construct ($environment){
         $this->environment = $environment;
+        $this->setDefined();
     }
 
     public function getConfig(){
-        $filename = 'config_'.$this->environment.'.ini';
-        return Config::read($filename);
+        if(!isset($this->config)){
+            $filename = 'config_'.$this->environment.'.ini';
+            $this->config = Config::read($filename);
+        }
+        return $this->config;
     }
 
     public function getEnvironment(){
         return $this->environment;
+    }
+
+    protected function setDefined(){
+        $config = $this->getConfig();
+        $this->defineDB($config['db']);
+    }
+
+    protected function defineDB($params){
+        foreach($params as $key => $value){
+            define(strtoupper($key), ($value) ? $value : '');
+        }
+    }
+
+    public function getDb(){
+        if(!isset($this->connection)){
+            $this->connection = Connection::getInstance();
+        }
+        return $this->connection;
     }
 }
