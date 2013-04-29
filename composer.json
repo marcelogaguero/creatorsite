@@ -1,4 +1,8 @@
 {
+    "config" : {
+        "process-timeout" : 4000
+    },
+
     "repositories": [
         {
             "type": "git",

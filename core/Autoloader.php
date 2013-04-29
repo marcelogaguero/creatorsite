@@ -11,6 +11,8 @@ namespace core;
 class Autoloader
 {
     public static function load($module){
+        require_once __DIR__.'/../vendor/autoload.php';
+
         $path = __DIR__.'/../modules/'.$module.'/controllers/';
 
         if(!is_dir($path)) throw new \Exception("No existe el modulo ". $module);
