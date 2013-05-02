@@ -35,9 +35,9 @@ class CreateModuleTask extends TaskBase
 
         if(!mkdir($path, 0775, true)) throw new \Exception("No se pudo crear el directorio $path. \n");
         if(!mkdir($path."/controllers", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/controllers. \n");
-        if(!mkdir($path."/css", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/css. \n");
-        if(!mkdir($path."/img", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/img. \n");
-        if(!mkdir($path."/js", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/js. \n");
+        // if(!mkdir($path."/css", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/css. \n");
+        // if(!mkdir($path."/img", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/img. \n");
+        // if(!mkdir($path."/js", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/js. \n");
         if(!mkdir($path."/views", 0775, true)) throw new \Exception("No se pudo crear el directorio $path/views. \n");
 
         $file = $path."/controllers/".$module."Controller.php";
@@ -80,16 +80,22 @@ EOD;
     protected function getCodeView(){
 
         $html = <<<EOD
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <link rel="stylesheet" href="/web/css/bootstrap.min.css" />
-</head>
-<body>
-    <h1>CREADOR DE SITIOS</h1><br/>
-    <p>Nuevo modulo</p>
-</body>
-</html>
+{% extends "/layout.html.twig" %}
+{% block content %}
+    <div class="span12">
+        <div class="row">
+              <div class="alert alert-info">
+                  <i class="icon-star"></i>
+                  {% if name != '' %}
+                      Hola  {{ name }}
+                  {% else %}
+                      <b>Bienvenido!!</b><br/>
+                      Gracias por utilizar el framework
+                  {% endif %}
+              </div>
+          </div>
+    </div>
+{% endblock %}
 EOD;
         return $html;
     }

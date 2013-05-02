@@ -13,9 +13,7 @@ use \core\BaseController;
 class TestController extends BaseController
 {
     public function indexAction(){
-
         $params = $_GET;
-
         return $this->render($this->getPathBaseModule().'views/index.html.twig', $params);
     }
 }

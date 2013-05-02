@@ -1,1 +1,16 @@
-Hola --> {{ name }} <--
+{% extends "/layout.html.twig" %}
+{% block content %}
+    <div class="span12">
+        <div class="row">
+              <div class="alert alert-info">
+                  <i class="icon-star"></i>
+                  {% if name != '' %}
+                      Hola  {{ name }}
+                  {% else %}
+                      <b>Bienvenido!!</b><br/>
+                      Gracias por utilizar el framework
+                  {% endif %}
+              </div>
+          </div>
+    </div>
+{% endblock %}

@@ -45,9 +45,12 @@ class BaseController
     public function render($template, $params = array()){
 
         $parser = $this->parserTemplate($template);
-        $loader = new \Twig_Loader_Filesystem($parser['path']);
+        $root = substr($parser['path'], 0, strripos($template, 'modules')).'modules';
+
+        $loader = new \Twig_Loader_Filesystem(array($root, $parser['path']));
+
         $twig = new \Twig_Environment($loader, array(
-            'debug' => ($this->getContext()->getEnvironment() != 'dev'),
+            'debug' => ($this->getContext()->getEnvironment() == 'dev'),
             'cache' => $this->cache,
         ));
 
